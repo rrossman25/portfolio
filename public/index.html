@@ -1,19 +1,73 @@
-<!-- sourced from https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html -->
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <title>Rebecca Rossman Portfolio</title>
 </head>
 
 <body>
-  <div id="root"></div>
-  <noscript>
-    You need to enable JavaScript to run this app.
-  </noscript>
-  <script src="../dist/bundle.js"></script>
+<!-- NAVBAR -->
+  <nav id = 'navbar' class = 'nav'>
+    <a href = '#about' class = 'nav-link'>About</a>
+    <a href = '#projects' class = 'nav-link'>Work</a>
+    <a href = '#contact' class = 'nav-link'>Contact</a>
+  </nav>
+
+
+    <div id = 'sections-div'>
+
+<!-- WELCOME -->
+      <section id = 'welcome-section'>
+        <h1 id = 'name' >Rebecca Rossman</h1>
+        <h2 id = 'job-title'>Software Developer</h2>
+      </section>
+
+<!-- ABOUT -->
+      <section id = 'about' name = 'about'>
+        <h2>About Me</h2>
+        <div id = 'about-div'>
+          <img id = 'about-pic' src = 'https://bit.ly/2tfPjCi' />
+          <div id = 'info-div'>
+            <p class = 'about-information'>I began my career in film and business, and have always enjoyed problem solving and creating.<br>
+              <br>My first introduction to code was in a programming course in college, and I loved it so much that I began to teach myself to code.<br>
+              <br>While exploring a career in film, my passion for coding reignited and I decided to change my trajectory to pursue a path as a Software Engineer.<br>
+              <br>I decided to attend The Grace Hopper Program to enhance my programming skills and to begin immersing myself in the tech industry.<br>
+              <br>I am excited to begin my new career in technology with a company that values innovation, passion, and integrity.</p>
+          </div>
+        </div>
+        <p id = 'skills' class = 'about-information'>Technical Skills:<br><br>Proficient: Javascript, Node.js, CSS, HTML, Express, Git, React, Redux, Sequelize, PostgreSQL<br>Knowledgeable: Mocha, Chai, React Native, Firebase, Firestore, Expo, Heroku, Travis, React-Bootstrap<br>Some Experience: Python, SQL, Sockets.io</p>
+      </section>
+
+<!-- PROJECTS -->
+      <section id = 'projects' name = 'projects'>
+        <h2 id = 'projects-title'>Some of my projects...</h2>
+        <div id = 'projects-div'>
+          <div id = 'pandemic' class = 'project-tile'>
+            <a href = 'http://onlinepandemicgame.herokuapp.com/' target = _blank ><img src = 'pandemic.png' alt = 'Image of Pandemic home screen' class = 'project-img' id = 'pandemic-img'/><br>Pandemic</a>
+          </div>
+          <div id = 'binge' class = 'project-tile'>
+            <a href = 'http://www.github.com/rrossman25/binge'  target = _blank ><img src = 'binge.jpg' alt = 'Image of Binge home screen' class = 'project-img' id = 'binge-img'/><br>Binge</a>
+          </div>
+          <div id = 'helios' class = 'project-tile'>
+            <a href = 'http://graceshopper-helios.herokuapp.com/' target = _blank ><img src = 'helios.png' alt = 'Image of Helios Wands Hornbeam Wand screen' class = 'project-img' id = 'helios-img'/><br>Helios Wands</a>
+          </div>
+        </div>
+      </section>
+
+<!-- CONTACT -->
+      <section id = 'contact' name = 'contact'>
+        <h2 id = 'contact-connect'>Let's Connect</h2>
+        <div id = 'contact-links-div'>
+          <a href = 'http://www.github.com/rrossman25' class = 'contact-link'><img class = 'logo' id = 'github-logo' src = 'gihublogo.png' alt = 'github'/></a>
+          <a href = 'http://www.linkedin.com/in/rebecca-rossman' class = 'contact-link' ><img class = 'logo' id = 'linkedin-logo' src = 'linkedin.png' alt = 'linkedin' /></a>
+          <a href = 'mailto:rrossman25@gmail.com' class = 'contact-link'><img class = 'logo' id = 'email-logo' src = 'gmail.png' alt = 'email' /></a>
+        </div>
+      </section>
+    </div>
 </body>
 
 </html>
