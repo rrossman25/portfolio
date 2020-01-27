@@ -4,10 +4,7 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "npm run build-watch & npm run start-server",
-    "start": "nodemon --watch server main.js -e html,js,css",
-    "build-watch": "webpack -w"
+    "start": "nodemon --watch server main.js -e html,js,css"
   },
   "repository": {
     "type": "git",
