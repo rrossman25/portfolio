@@ -1,3 +1,10 @@
+@media (max-width: 75em) {
+    html {
+      height: 100%;
+    }
+  }
+
+
 body {
     font-family: 'Amatic SC', cursive;
     color: #85E2E2;
@@ -80,7 +87,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     background-color: #380036;
-    height: 120vh;
+    height: 150vh;
 }
 
 #about-div {
